@@ -1,0 +1,89 @@
+@import "../../global.scss";
+
+.portfolio {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+  h1 {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+
+  ul {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .container {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+      .tools {
+        color: $mainColor;
+        font-weight: 700;
+      }
+
+    @include mobile {
+      margin: 10 0;
+      width: 100%;
+    }
+
+
+    // .item {
+    //   width: 330px;
+    //   height: 330px;
+    //   border-radius: 20px;
+    //   border: 1px solid rgb(240, 239, 239);
+    //   margin: 10px 20px;
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+    //   color: white;
+    //   position: relative;
+    //   transition: all .5s ease;
+    //   cursor: pointer;
+    //   overflow: hidden;
+      
+    //   @include mobile {
+    //     width: 130px;
+    //     height: 100px;
+    //   }
+
+
+    //   h3 {
+    //     position: absolute;
+    //     font-size: 20px;
+    //   }
+
+
+    //   &:hover {
+    //     background-color: $mainColor;
+    //     img {
+    //       opacity: 0.2;
+    //       z-index: 0;
+    //     }
+    //   }
+    // }
+  }
+}
